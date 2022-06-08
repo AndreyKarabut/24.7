@@ -59,7 +59,7 @@ public class University {
                 "id в системе: " + id +
                 ", Полное наименование: " + fullName +
                 ", Сокращенное наименование: " + shortName +
-                ", Год основания:" + yearOfFoundation +
-                ", Основная специализация:" + mainProfile;
+                ", Год основания: " + yearOfFoundation +
+                ", Основная специализация: " + mainProfile;
     }
 }

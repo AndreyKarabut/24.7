@@ -1,8 +1,12 @@
 public enum StudyProfile {
     PROGRAMMER("Программист"),
-    HIGHTMATHTEACHER("Математик"),
+    MATHEMATICS("Математик"),
     ENGINEERE("Инженер"),
-    MEDICINE("Медик");
+    MEDICINE("Медик"),
+    PHYSICS("Физик"),
+    LINGUISTICS("Лингвист");
+
+
     private String decryption;
 
     StudyProfile(String decryption) {
