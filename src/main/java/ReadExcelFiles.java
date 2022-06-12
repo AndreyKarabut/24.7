@@ -1,5 +1,7 @@
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -16,7 +18,8 @@ public class ReadExcelFiles {
         workbook = new XSSFWorkbook(fis);
     }
 
-    public void readUniversity() {
+    public List<University> readUniversity() {
+        List<University> universities = new ArrayList<>();
         XSSFSheet xssfSheet = workbook.getSheet("Университеты");
         for (int i = 1; i < 8; i++) {
             Row row = xssfSheet.getRow(i);
@@ -28,11 +31,14 @@ public class ReadExcelFiles {
             String stringmMainProfile = row.getCell(4).getStringCellValue();
             StudyProfile mainProfile = StudyProfile.valueOf(stringmMainProfile);
             University university = new University(UniversityId, FullName, shortName, yearOfFoundation, mainProfile);
-            System.out.println(university);
+            universities.add(university);
+            //System.out.println(university);
         }
+        return universities;
     }
 
-    public void readStudents() {
+    public List<Student> readStudents() {
+        List<Student> students = new ArrayList<>();
         XSSFSheet xssfSheet = workbook.getSheet("Студенты");
         for (int i = 1; i < 12; i++) {
             Row row = xssfSheet.getRow(i);
@@ -43,7 +49,9 @@ public class ReadExcelFiles {
             double numericCellValue1 = row.getCell(3).getNumericCellValue();
             float AvgExamScore = (float) numericCellValue1;
             Student student = new Student(UniversityId, FullName, CurrentCourseNumber, AvgExamScore);
-            System.out.println(student);
+            students.add(student);
+            //System.out.println(student);
         }
+        return students;
     }
 }
