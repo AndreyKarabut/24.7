@@ -1,7 +1,7 @@
 public class ComparatorUtil {
-    private ComparatorUtil{
 
-    }
+    private ComparatorUtil(){}
+
     public static StudentComparator getStudentComparator(StudentComparatorType studentComparatorType) {
 
         switch (studentComparatorType) {

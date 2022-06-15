@@ -1,6 +1,6 @@
 import org.apache.commons.lang3.StringUtils;
 
-public interface UniversityProfileComparator implements UniversityComparator{
+public class UniversityProfileComparator implements UniversityComparator{
     @Override
     public int compare(University u1, University u2){
         if (u1.getMainProfile() == null){
