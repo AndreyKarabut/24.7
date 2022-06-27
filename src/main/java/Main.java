@@ -40,5 +40,7 @@ public class Main {
             System.out.println(universityFromJson);
         });
 
+        List<Statistics> statisticsList = StatisticsUtil.createStatistics(students, universities);
+        XlsWriter.writeXlsStatistics(statisticsList, "statistics.xlsx");
     }
 }
