@@ -7,13 +7,20 @@ import java.util.List;
 import java.util.OptionalDouble;
 import java.util.Set;
 import java.util.stream.Collectors;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class StatisticsUtil {
+
+    private static final Logger logger = Logger.getLogger(StatisticsUtil.class.getName());
+
     private StatisticsUtil() {
     }
 
     public static List<Statistics> createStatistics(List<Student> students,
                                                     List<University> universities) {
+
+        logger.log(Level.INFO, "Начало сбора статистики");
 
         List<Statistics> statisticsList = new ArrayList<>();
 
@@ -48,6 +55,9 @@ public class StatisticsUtil {
             avgExamScore.ifPresent(value -> statistics.setAvgExamScore(
                     (float) BigDecimal.valueOf(value).setScale(2, RoundingMode.HALF_UP).doubleValue()));
         });
+
+        logger.log(Level.INFO,
+                String.format("Статистика собрана по %s пунктам", statisticsList.size()));
 
         return statisticsList;
     }

@@ -8,14 +8,6 @@ public class Statistics {
     public Statistics() {
     }
 
-//    public Statistics(StudyProfile mainProfile, float avgExamScore, int countStudents, int countUniversity, String nameUniversity) {
-//        this.mainProfile = mainProfile;
-//        this.avgExamScore = avgExamScore;
-//        this.countStudents = countStudents;
-//        this.countUniversity = countUniversity;
-//        this.nameUniversity = nameUniversity;
-//    }
-
     public StudyProfile getMainProfile() {
         return mainProfile;
     }

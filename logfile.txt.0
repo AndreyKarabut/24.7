@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-07-03T05:55:26.255662600Z</date>
+  <millis>1656827726255</millis>
+  <nanos>662600</nanos>
+  <sequence>0</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Приложение запущено</message>
+</record>
+<record>
+  <date>2022-07-03T05:55:26.467664100Z</date>
+  <millis>1656827726467</millis>
+  <nanos>664100</nanos>
+  <sequence>1</sequence>
+  <logger>ReadExcelFiles</logger>
+  <level>INFO</level>
+  <class>ReadExcelFiles</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Начало чтения файла</message>
+</record>
+<record>
+  <date>2022-07-03T05:55:28.314697800Z</date>
+  <millis>1656827728314</millis>
+  <nanos>697800</nanos>
+  <sequence>2</sequence>
+  <logger>ReadExcelFiles</logger>
+  <level>INFO</level>
+  <class>ReadExcelFiles</class>
+  <method>readStudents</method>
+  <thread>1</thread>
+  <message>Файл прочитан</message>
+</record>
+<record>
+  <date>2022-07-03T05:55:28.567703900Z</date>
+  <millis>1656827728567</millis>
+  <nanos>703900</nanos>
+  <sequence>3</sequence>
+  <logger>ReadExcelFiles</logger>
+  <level>INFO</level>
+  <class>ReadExcelFiles</class>
+  <method>readUniversity</method>
+  <thread>1</thread>
+  <message>Файл прочитан</message>
+</record>
+<record>
+  <date>2022-07-03T05:55:28.607704Z</date>
+  <millis>1656827728607</millis>
+  <nanos>704000</nanos>
+  <sequence>4</sequence>
+  <logger>StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>StatisticsUtil</class>
+  <method>createStatistics</method>
+  <thread>1</thread>
+  <message>Начало сбора статистики</message>
+</record>
+<record>
+  <date>2022-07-03T05:55:28.627704Z</date>
+  <millis>1656827728627</millis>
+  <nanos>704000</nanos>
+  <sequence>5</sequence>
+  <logger>StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>StatisticsUtil</class>
+  <method>createStatistics</method>
+  <thread>1</thread>
+  <message>Статистика собрана по 4 пунктам</message>
+</record>
+<record>
+  <date>2022-07-03T05:55:28.627704Z</date>
+  <millis>1656827728627</millis>
+  <nanos>704000</nanos>
+  <sequence>6</sequence>
+  <logger>XlsWriter</logger>
+  <level>INFO</level>
+  <class>XlsWriter</class>
+  <method>writeXlsStatistics</method>
+  <thread>1</thread>
+  <message>Начало записи файла</message>
+</record>
+<record>
+  <date>2022-07-03T05:55:29.415731800Z</date>
+  <millis>1656827729415</millis>
+  <nanos>731800</nanos>
+  <sequence>7</sequence>
+  <logger>XlsWriter</logger>
+  <level>INFO</level>
+  <class>XlsWriter</class>
+  <method>writeXlsStatistics</method>
+  <thread>1</thread>
+  <message>Запись файла прошла успешно</message>
+</record>
+<record>
+  <date>2022-07-03T05:55:29.425731800Z</date>
+  <millis>1656827729425</millis>
+  <nanos>731800</nanos>
+  <sequence>8</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Приложение закрыто</message>
+</record>
+</log>
