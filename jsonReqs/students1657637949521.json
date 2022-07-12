@@ -1,0 +1,68 @@
+[
+  {
+    "studentName": "0004-high",
+    "universityId": "Соколов В. В.",
+    "course": 1,
+    "avgScore": 4.8
+  },
+  {
+    "studentName": "0001-high",
+    "universityId": "Петров П. А.",
+    "course": 1,
+    "avgScore": 5.0
+  },
+  {
+    "studentName": "0001-high",
+    "universityId": "Алексеев С. В.",
+    "course": 1,
+    "avgScore": 5.0
+  },
+  {
+    "studentName": "0002-high",
+    "universityId": "Иванов И. А.",
+    "course": 2,
+    "avgScore": 4.0
+  },
+  {
+    "studentName": "0002-high",
+    "universityId": "Козлов М. В.",
+    "course": 2,
+    "avgScore": 4.6
+  },
+  {
+    "studentName": "0004-high",
+    "universityId": "Сидоров Е. Г.",
+    "course": 2,
+    "avgScore": 3.9
+  },
+  {
+    "studentName": "0001-high",
+    "universityId": "Витальев В. А.",
+    "course": 2,
+    "avgScore": 4.0
+  },
+  {
+    "studentName": "0002-high",
+    "universityId": "Фёдоров А. И.",
+    "course": 3,
+    "avgScore": 4.2
+  },
+  {
+    "studentName": "0001-high",
+    "universityId": "Иванов А. Г.",
+    "course": 3,
+    "avgScore": 4.8
+  },
+  {
+    "studentName": "0003-high",
+    "universityId": "Игнатьев М. М.",
+    "course": 4,
+    "avgScore": 4.3
+  },
+  {
+    "studentName": "0001-high",
+    "universityId": "Васильев В. П.",
+    "course": 4,
+    "avgScore": 4.7
+  }
+]

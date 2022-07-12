@@ -110,3 +110,737 @@
   <message>Приложение закрыто</message>
 </record>
 </log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-07-12T14:49:19.180936500Z</date>
+  <millis>1657637359180</millis>
+  <nanos>936500</nanos>
+  <sequence>0</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Приложение запущено</message>
+</record>
+<record>
+  <date>2022-07-12T14:49:19.588959900Z</date>
+  <millis>1657637359588</millis>
+  <nanos>959900</nanos>
+  <sequence>1</sequence>
+  <logger>ReadExcelFiles</logger>
+  <level>INFO</level>
+  <class>ReadExcelFiles</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Начало чтения файла</message>
+</record>
+<record>
+  <date>2022-07-12T14:49:22.523127700Z</date>
+  <millis>1657637362523</millis>
+  <nanos>127700</nanos>
+  <sequence>2</sequence>
+  <logger>ReadExcelFiles</logger>
+  <level>INFO</level>
+  <class>ReadExcelFiles</class>
+  <method>readStudents</method>
+  <thread>1</thread>
+  <message>Файл прочитан</message>
+</record>
+<record>
+  <date>2022-07-12T14:49:22.710138400Z</date>
+  <millis>1657637362710</millis>
+  <nanos>138400</nanos>
+  <sequence>3</sequence>
+  <logger>ReadExcelFiles</logger>
+  <level>INFO</level>
+  <class>ReadExcelFiles</class>
+  <method>readUniversity</method>
+  <thread>1</thread>
+  <message>Файл прочитан</message>
+</record>
+<record>
+  <date>2022-07-12T14:49:22.769141800Z</date>
+  <millis>1657637362769</millis>
+  <nanos>141800</nanos>
+  <sequence>4</sequence>
+  <logger>StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>StatisticsUtil</class>
+  <method>createStatistics</method>
+  <thread>1</thread>
+  <message>Начало сбора статистики</message>
+</record>
+<record>
+  <date>2022-07-12T14:49:22.845146100Z</date>
+  <millis>1657637362845</millis>
+  <nanos>146100</nanos>
+  <sequence>5</sequence>
+  <logger>StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>StatisticsUtil</class>
+  <method>createStatistics</method>
+  <thread>1</thread>
+  <message>Статистика собрана по 4 пунктам</message>
+</record>
+<record>
+  <date>2022-07-12T14:49:22.847146200Z</date>
+  <millis>1657637362847</millis>
+  <nanos>146200</nanos>
+  <sequence>6</sequence>
+  <logger>XlsWriter</logger>
+  <level>INFO</level>
+  <class>XlsWriter</class>
+  <method>writeXlsStatistics</method>
+  <thread>1</thread>
+  <message>Начало записи файла</message>
+</record>
+<record>
+  <date>2022-07-12T14:49:23.594188900Z</date>
+  <millis>1657637363594</millis>
+  <nanos>188900</nanos>
+  <sequence>7</sequence>
+  <logger>XlsWriter</logger>
+  <level>INFO</level>
+  <class>XlsWriter</class>
+  <method>writeXlsStatistics</method>
+  <thread>1</thread>
+  <message>Запись файла прошла успешно</message>
+</record>
+<record>
+  <date>2022-07-12T14:49:23.602189400Z</date>
+  <millis>1657637363602</millis>
+  <nanos>189400</nanos>
+  <sequence>8</sequence>
+  <logger>XmlWritter</logger>
+  <level>INFO</level>
+  <class>XmlWritter</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>XML marshalling started</message>
+</record>
+<record>
+  <date>2022-07-12T14:49:23.618190300Z</date>
+  <millis>1657637363618</millis>
+  <nanos>190300</nanos>
+  <sequence>9</sequence>
+  <logger>XmlWritter</logger>
+  <level>SEVERE</level>
+  <class>XmlWritter</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>XML marshalling failed</message>
+  <exception>
+    <message>javax.xml.bind.JAXBException
+ - with linked exception:
+[java.lang.ClassNotFoundException: com.sun.xml.bind.v2.ContextFactory]</message>
+    <frame>
+      <class>javax.xml.bind.ContextFinder</class>
+      <method>newInstance</method>
+      <line>187</line>
+    </frame>
+    <frame>
+      <class>javax.xml.bind.ContextFinder</class>
+      <method>find</method>
+      <line>376</line>
+    </frame>
+    <frame>
+      <class>javax.xml.bind.JAXBContext</class>
+      <method>newInstance</method>
+      <line>574</line>
+    </frame>
+    <frame>
+      <class>javax.xml.bind.JAXBContext</class>
+      <method>newInstance</method>
+      <line>522</line>
+    </frame>
+    <frame>
+      <class>XmlWritter</class>
+      <method>generateXmlReq</method>
+      <line>23</line>
+    </frame>
+    <frame>
+      <class>Main</class>
+      <method>main</method>
+      <line>62</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2022-07-12T14:49:23.630191Z</date>
+  <millis>1657637363630</millis>
+  <nanos>191000</nanos>
+  <sequence>10</sequence>
+  <logger>JsonWriter</logger>
+  <level>INFO</level>
+  <class>JsonWriter</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>JSON writing started</message>
+</record>
+<record>
+  <date>2022-07-12T14:49:23.634191200Z</date>
+  <millis>1657637363634</millis>
+  <nanos>191200</nanos>
+  <sequence>11</sequence>
+  <logger>JsonWriter</logger>
+  <level>INFO</level>
+  <class>JsonWriter</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>Directory created successfully</message>
+</record>
+<record>
+  <date>2022-07-12T14:49:23.667193100Z</date>
+  <millis>1657637363667</millis>
+  <nanos>193100</nanos>
+  <sequence>12</sequence>
+  <logger>JsonWriter</logger>
+  <level>INFO</level>
+  <class>JsonWriter</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>JSON writing finished successfully</message>
+</record>
+<record>
+  <date>2022-07-12T14:49:23.668193200Z</date>
+  <millis>1657637363668</millis>
+  <nanos>193200</nanos>
+  <sequence>13</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Приложение закрыто</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-07-12T14:52:59.051512400Z</date>
+  <millis>1657637579051</millis>
+  <nanos>512400</nanos>
+  <sequence>0</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Приложение запущено</message>
+</record>
+<record>
+  <date>2022-07-12T14:52:59.187520200Z</date>
+  <millis>1657637579187</millis>
+  <nanos>520200</nanos>
+  <sequence>1</sequence>
+  <logger>ReadExcelFiles</logger>
+  <level>INFO</level>
+  <class>ReadExcelFiles</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Начало чтения файла</message>
+</record>
+<record>
+  <date>2022-07-12T14:53:01.102629700Z</date>
+  <millis>1657637581102</millis>
+  <nanos>629700</nanos>
+  <sequence>2</sequence>
+  <logger>ReadExcelFiles</logger>
+  <level>INFO</level>
+  <class>ReadExcelFiles</class>
+  <method>readStudents</method>
+  <thread>1</thread>
+  <message>Файл прочитан</message>
+</record>
+<record>
+  <date>2022-07-12T14:53:01.377645400Z</date>
+  <millis>1657637581377</millis>
+  <nanos>645400</nanos>
+  <sequence>3</sequence>
+  <logger>ReadExcelFiles</logger>
+  <level>INFO</level>
+  <class>ReadExcelFiles</class>
+  <method>readUniversity</method>
+  <thread>1</thread>
+  <message>Файл прочитан</message>
+</record>
+<record>
+  <date>2022-07-12T14:53:01.426648200Z</date>
+  <millis>1657637581426</millis>
+  <nanos>648200</nanos>
+  <sequence>4</sequence>
+  <logger>StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>StatisticsUtil</class>
+  <method>createStatistics</method>
+  <thread>1</thread>
+  <message>Начало сбора статистики</message>
+</record>
+<record>
+  <date>2022-07-12T14:53:01.452649700Z</date>
+  <millis>1657637581452</millis>
+  <nanos>649700</nanos>
+  <sequence>5</sequence>
+  <logger>StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>StatisticsUtil</class>
+  <method>createStatistics</method>
+  <thread>1</thread>
+  <message>Статистика собрана по 4 пунктам</message>
+</record>
+<record>
+  <date>2022-07-12T14:53:01.457650Z</date>
+  <millis>1657637581457</millis>
+  <nanos>650000</nanos>
+  <sequence>6</sequence>
+  <logger>XlsWriter</logger>
+  <level>INFO</level>
+  <class>XlsWriter</class>
+  <method>writeXlsStatistics</method>
+  <thread>1</thread>
+  <message>Начало записи файла</message>
+</record>
+<record>
+  <date>2022-07-12T14:53:01.993680700Z</date>
+  <millis>1657637581993</millis>
+  <nanos>680700</nanos>
+  <sequence>7</sequence>
+  <logger>XlsWriter</logger>
+  <level>INFO</level>
+  <class>XlsWriter</class>
+  <method>writeXlsStatistics</method>
+  <thread>1</thread>
+  <message>Запись файла прошла успешно</message>
+</record>
+<record>
+  <date>2022-07-12T14:53:01.997680900Z</date>
+  <millis>1657637581997</millis>
+  <nanos>680900</nanos>
+  <sequence>8</sequence>
+  <logger>XmlWritter</logger>
+  <level>INFO</level>
+  <class>XmlWritter</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>Начало сортировки XML</message>
+</record>
+<record>
+  <date>2022-07-12T14:53:02.007681500Z</date>
+  <millis>1657637582007</millis>
+  <nanos>681500</nanos>
+  <sequence>9</sequence>
+  <logger>XmlWritter</logger>
+  <level>SEVERE</level>
+  <class>XmlWritter</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>XML marshalling failed</message>
+  <exception>
+    <message>javax.xml.bind.JAXBException
+ - with linked exception:
+[java.lang.ClassNotFoundException: com.sun.xml.bind.v2.ContextFactory]</message>
+    <frame>
+      <class>javax.xml.bind.ContextFinder</class>
+      <method>newInstance</method>
+      <line>187</line>
+    </frame>
+    <frame>
+      <class>javax.xml.bind.ContextFinder</class>
+      <method>find</method>
+      <line>376</line>
+    </frame>
+    <frame>
+      <class>javax.xml.bind.JAXBContext</class>
+      <method>newInstance</method>
+      <line>574</line>
+    </frame>
+    <frame>
+      <class>javax.xml.bind.JAXBContext</class>
+      <method>newInstance</method>
+      <line>522</line>
+    </frame>
+    <frame>
+      <class>XmlWritter</class>
+      <method>generateXmlReq</method>
+      <line>23</line>
+    </frame>
+    <frame>
+      <class>Main</class>
+      <method>main</method>
+      <line>62</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2022-07-12T14:53:02.012681800Z</date>
+  <millis>1657637582012</millis>
+  <nanos>681800</nanos>
+  <sequence>10</sequence>
+  <logger>JsonWriter</logger>
+  <level>INFO</level>
+  <class>JsonWriter</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>JSON writing started</message>
+</record>
+<record>
+  <date>2022-07-12T14:53:02.065684800Z</date>
+  <millis>1657637582065</millis>
+  <nanos>684800</nanos>
+  <sequence>11</sequence>
+  <logger>JsonWriter</logger>
+  <level>INFO</level>
+  <class>JsonWriter</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>JSON writing finished successfully</message>
+</record>
+<record>
+  <date>2022-07-12T14:53:02.067684900Z</date>
+  <millis>1657637582067</millis>
+  <nanos>684900</nanos>
+  <sequence>12</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Приложение закрыто</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-07-12T14:59:06.905552400Z</date>
+  <millis>1657637946905</millis>
+  <nanos>552400</nanos>
+  <sequence>0</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Приложение запущено</message>
+</record>
+<record>
+  <date>2022-07-12T14:59:07.055561Z</date>
+  <millis>1657637947055</millis>
+  <nanos>561000</nanos>
+  <sequence>1</sequence>
+  <logger>ReadExcelFiles</logger>
+  <level>INFO</level>
+  <class>ReadExcelFiles</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Начало чтения файла</message>
+</record>
+<record>
+  <date>2022-07-12T14:59:08.798660700Z</date>
+  <millis>1657637948798</millis>
+  <nanos>660700</nanos>
+  <sequence>2</sequence>
+  <logger>ReadExcelFiles</logger>
+  <level>INFO</level>
+  <class>ReadExcelFiles</class>
+  <method>readStudents</method>
+  <thread>1</thread>
+  <message>Файл прочитан</message>
+</record>
+<record>
+  <date>2022-07-12T14:59:09.003672400Z</date>
+  <millis>1657637949003</millis>
+  <nanos>672400</nanos>
+  <sequence>3</sequence>
+  <logger>ReadExcelFiles</logger>
+  <level>INFO</level>
+  <class>ReadExcelFiles</class>
+  <method>readUniversity</method>
+  <thread>1</thread>
+  <message>Файл прочитан</message>
+</record>
+<record>
+  <date>2022-07-12T14:59:09.040674600Z</date>
+  <millis>1657637949040</millis>
+  <nanos>674600</nanos>
+  <sequence>4</sequence>
+  <logger>StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>StatisticsUtil</class>
+  <method>createStatistics</method>
+  <thread>1</thread>
+  <message>Начало сбора статистики</message>
+</record>
+<record>
+  <date>2022-07-12T14:59:09.067676100Z</date>
+  <millis>1657637949067</millis>
+  <nanos>676100</nanos>
+  <sequence>5</sequence>
+  <logger>StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>StatisticsUtil</class>
+  <method>createStatistics</method>
+  <thread>1</thread>
+  <message>Статистика собрана по 4 пунктам</message>
+</record>
+<record>
+  <date>2022-07-12T14:59:09.070676300Z</date>
+  <millis>1657637949070</millis>
+  <nanos>676300</nanos>
+  <sequence>6</sequence>
+  <logger>XlsWriter</logger>
+  <level>INFO</level>
+  <class>XlsWriter</class>
+  <method>writeXlsStatistics</method>
+  <thread>1</thread>
+  <message>Начало записи файла</message>
+</record>
+<record>
+  <date>2022-07-12T14:59:09.517701900Z</date>
+  <millis>1657637949517</millis>
+  <nanos>701900</nanos>
+  <sequence>7</sequence>
+  <logger>XlsWriter</logger>
+  <level>INFO</level>
+  <class>XlsWriter</class>
+  <method>writeXlsStatistics</method>
+  <thread>1</thread>
+  <message>Запись файла прошла успешно</message>
+</record>
+<record>
+  <date>2022-07-12T14:59:09.523702200Z</date>
+  <millis>1657637949523</millis>
+  <nanos>702200</nanos>
+  <sequence>8</sequence>
+  <logger>XmlWritter</logger>
+  <level>INFO</level>
+  <class>XmlWritter</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>Начало сортировки XML</message>
+</record>
+<record>
+  <date>2022-07-12T14:59:09.926725200Z</date>
+  <millis>1657637949926</millis>
+  <nanos>725200</nanos>
+  <sequence>9</sequence>
+  <logger>XmlWritter</logger>
+  <level>INFO</level>
+  <class>XmlWritter</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>Directory created successfully</message>
+</record>
+<record>
+  <date>2022-07-12T14:59:09.951726700Z</date>
+  <millis>1657637949951</millis>
+  <nanos>726700</nanos>
+  <sequence>10</sequence>
+  <logger>XmlWritter</logger>
+  <level>INFO</level>
+  <class>XmlWritter</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>XML marshalling finished successfully</message>
+</record>
+<record>
+  <date>2022-07-12T14:59:09.954726800Z</date>
+  <millis>1657637949954</millis>
+  <nanos>726800</nanos>
+  <sequence>11</sequence>
+  <logger>JsonWriter</logger>
+  <level>INFO</level>
+  <class>JsonWriter</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>JSON writing started</message>
+</record>
+<record>
+  <date>2022-07-12T14:59:09.985728600Z</date>
+  <millis>1657637949985</millis>
+  <nanos>728600</nanos>
+  <sequence>12</sequence>
+  <logger>JsonWriter</logger>
+  <level>INFO</level>
+  <class>JsonWriter</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>JSON writing finished successfully</message>
+</record>
+<record>
+  <date>2022-07-12T14:59:09.987728700Z</date>
+  <millis>1657637949987</millis>
+  <nanos>728700</nanos>
+  <sequence>13</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Приложение закрыто</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-07-12T15:04:21.494545900Z</date>
+  <millis>1657638261494</millis>
+  <nanos>545900</nanos>
+  <sequence>0</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Приложение запущено</message>
+</record>
+<record>
+  <date>2022-07-12T15:04:21.716558600Z</date>
+  <millis>1657638261716</millis>
+  <nanos>558600</nanos>
+  <sequence>1</sequence>
+  <logger>ReadExcelFiles</logger>
+  <level>INFO</level>
+  <class>ReadExcelFiles</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Начало чтения файла</message>
+</record>
+<record>
+  <date>2022-07-12T15:04:23.910684100Z</date>
+  <millis>1657638263910</millis>
+  <nanos>684100</nanos>
+  <sequence>2</sequence>
+  <logger>ReadExcelFiles</logger>
+  <level>INFO</level>
+  <class>ReadExcelFiles</class>
+  <method>readStudents</method>
+  <thread>1</thread>
+  <message>Файл прочитан</message>
+</record>
+<record>
+  <date>2022-07-12T15:04:24.101695Z</date>
+  <millis>1657638264101</millis>
+  <nanos>695000</nanos>
+  <sequence>3</sequence>
+  <logger>ReadExcelFiles</logger>
+  <level>INFO</level>
+  <class>ReadExcelFiles</class>
+  <method>readUniversity</method>
+  <thread>1</thread>
+  <message>Файл прочитан</message>
+</record>
+<record>
+  <date>2022-07-12T15:04:24.138697100Z</date>
+  <millis>1657638264138</millis>
+  <nanos>697100</nanos>
+  <sequence>4</sequence>
+  <logger>StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>StatisticsUtil</class>
+  <method>createStatistics</method>
+  <thread>1</thread>
+  <message>Начало сбора статистики</message>
+</record>
+<record>
+  <date>2022-07-12T15:04:24.159698300Z</date>
+  <millis>1657638264159</millis>
+  <nanos>698300</nanos>
+  <sequence>5</sequence>
+  <logger>StatisticsUtil</logger>
+  <level>INFO</level>
+  <class>StatisticsUtil</class>
+  <method>createStatistics</method>
+  <thread>1</thread>
+  <message>Статистика собрана по 4 пунктам</message>
+</record>
+<record>
+  <date>2022-07-12T15:04:24.163698600Z</date>
+  <millis>1657638264163</millis>
+  <nanos>698600</nanos>
+  <sequence>6</sequence>
+  <logger>XlsWriter</logger>
+  <level>INFO</level>
+  <class>XlsWriter</class>
+  <method>writeXlsStatistics</method>
+  <thread>1</thread>
+  <message>Начало записи файла</message>
+</record>
+<record>
+  <date>2022-07-12T15:04:24.621724800Z</date>
+  <millis>1657638264621</millis>
+  <nanos>724800</nanos>
+  <sequence>7</sequence>
+  <logger>XlsWriter</logger>
+  <level>INFO</level>
+  <class>XlsWriter</class>
+  <method>writeXlsStatistics</method>
+  <thread>1</thread>
+  <message>Запись файла прошла успешно</message>
+</record>
+<record>
+  <date>2022-07-12T15:04:24.632725400Z</date>
+  <millis>1657638264632</millis>
+  <nanos>725400</nanos>
+  <sequence>8</sequence>
+  <logger>XmlWritter</logger>
+  <level>INFO</level>
+  <class>XmlWritter</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>Начало работы с XML</message>
+</record>
+<record>
+  <date>2022-07-12T15:04:24.986745600Z</date>
+  <millis>1657638264986</millis>
+  <nanos>745600</nanos>
+  <sequence>9</sequence>
+  <logger>XmlWritter</logger>
+  <level>INFO</level>
+  <class>XmlWritter</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>XML файл успешно создан</message>
+</record>
+<record>
+  <date>2022-07-12T15:04:24.989745800Z</date>
+  <millis>1657638264989</millis>
+  <nanos>745800</nanos>
+  <sequence>10</sequence>
+  <logger>JsonWriter</logger>
+  <level>INFO</level>
+  <class>JsonWriter</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>начало записи JSON</message>
+</record>
+<record>
+  <date>2022-07-12T15:04:25.027748Z</date>
+  <millis>1657638265027</millis>
+  <nanos>748000</nanos>
+  <sequence>11</sequence>
+  <logger>JsonWriter</logger>
+  <level>INFO</level>
+  <class>JsonWriter</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>Запись JSON успешно завершена</message>
+</record>
+<record>
+  <date>2022-07-12T15:04:25.028748Z</date>
+  <millis>1657638265028</millis>
+  <nanos>748000</nanos>
+  <sequence>12</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Приложение закрыто</message>
+</record>
+</log>
